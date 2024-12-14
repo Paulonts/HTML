@@ -1,0 +1,60 @@
+RGB: Combinação de vermelho, verde e azul (Red, Green, Blue) <br>
+
+HEX: Combinação de vermelho, verde e azul, mas descrito em haxadecimal. <br>
+
+HSL: Matiz (hue), saturação(saturation) e iluminação(lighten). A matiz tem oos valores onde 0
+é vermelho, 120 verde, 240 azul. <br>
+
+RGBA:Mesmo de RBG, porém adicionado canal Alpha(Transparencia) <br>
+
+HSLA: Mesmo que HSL, porém adicionado canal Alpha(transparencia) <br>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORES</title>
+    <style>
+        .card1 {
+            border: solid 1px black;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            left: 40%;
+            top: 40%;
+            z-index: 1;
+            background-color: aquamarine;
+        }
+
+        .card2 {
+            border: solid 1px black;
+            width: 110px;
+            height: 110px;
+            position: absolute;
+            left: 35%;
+            top: 35%;
+            z-index: 2;
+            background-color: HSL(315, 90%, 70%, 1);
+        }
+        .foto{
+            padding-top: 500;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card1"></div>
+    <div class="card2"></div>
+    <div class="foto">
+        <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1669440716019/mCya0LfzO.png" alt="">
+    </div>
+</body>
+
+</html>

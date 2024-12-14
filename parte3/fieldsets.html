@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fieldsets</title>
+    <style>
+        .row {
+            margin: 5px;
+        }
+
+        label {
+            width: 100px;
+            text-align: right;
+            display: inline-block;
+            padding-right: 5px;
+        }
+
+        .empresa {
+            width: 146px;
+            text-align: right;
+            display: inline-block;
+            padding-right: 5px;
+        }
+
+        .email {
+            width: 114px;
+        }
+
+        fieldset {
+            margin: 5px, 0;
+            border-radius: 5px;
+            width: 600px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Formulário de cadastro</h1>
+    <form name="cadastro" method="post" autocomplete="on" target="_self">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <div class="row">
+                <label>Nome:</label><input type="text">
+                <label class="email">Email:</label><input type="text"><br>
+            </div>
+            <div class="row">
+                <label>Profissão:</label> <select name="role">
+                    <option value="">Selecione o cargo</option>
+                    <option value="Administrativo">Administrativo</option>
+                    <option value="Gerente">Gerente</option>
+                    <option value="Diretor">Diretor</option>
+                    <option value="Presidente">Presidente</option>
+                </select>
+                <label class="empresa">Empresa:</label> <input type="text"><br>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Endereço</legend>
+            <div class="row">
+                <label>Endereço</label> <input type="text">
+                <label>Número</label> <input type="number" min="0"><br>
+            </div>
+            <div class="row">
+                <label>Bairro</label> <input type="text"> <br>
+            </div>
+            <div class="row">
+                <label>Cidade/UF</label> <input type="text"> <br>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Informação de contato</legend>
+            <div class="row">
+                <label>Celular</label> <input type="text">
+                <label>Whatsapp</label> <input type="text"><br>
+            </div>
+            <div class="row">
+                <label>Linkedin</label> <input type="text">
+                <label>Github</label> <input type="text"> <br>
+            </div>
+        </fieldset>
+        <div class="row">
+            <button type="reset">Limpar</button>
+            <button type="submit" onclick="alert('enviado')">Enviar formulario</button>
+        </div>
+    </form>
+
+</body>
+
+</html>

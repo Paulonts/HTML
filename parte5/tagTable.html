@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        table{
+            -webkit-box-shadow: 8px 9px 4px 1px rgba(0,0,0,0.49); 
+            box-shadow: 8px 9px 4px 1px rgba(0,0,0,0.49);
+        }
+        table thead th{
+            background-color: black;
+            color: white;
+        }
+        table tfoot td{
+            background-color: rgb(152, 152, 152);
+        }
+        table tbody tr:nth-child(even){
+            background-color: rgb(195, 195, 195);
+        }
+        table tbody tr:hover{
+            background-color: rgb(141, 141, 141);
+        }
+    </style>
+</head>
+<body>
+    <table sumary="Esta tabela é apredizado do curso da dio" cellspacing="0" width="180" align="center">
+        <caption>Tabela com nomes e idades</caption>
+        <thead align="center">
+            <tr><th colspan="2">Total</th></tr>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+        <tbody align="center">
+            <tr><td>Paulo</td><td>21</td></tr>
+            <tr><td>Maria</td><td>25</td></tr>
+            <tr><td>Jose</td><td>27</td></tr>
+            <tr><td>Antonio</td><td>19</td></tr>
+            <tr><td>Rebeca</td><td>50</td></tr>
+            <tr><td>Julia</td><td>18</td></tr>
+            <tr><td>Ester</td><td>15</td></tr>
+        </tbody>
+        <tfoot align="center">
+            <tr><td>Total</td><td>7</td></tr>
+        </tfoot>
+    </table>
+</body>
+</html>
