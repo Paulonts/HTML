@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>Clinica Nédica</title>
+    <style>
+
+        body {
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            margin: 0;
+        }
+
+        .menu {
+            font-family: "Oswald", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            height: 100vh;
+            width: 14%;
+            background-color: rgb(48, 153, 153);
+            align-items: center;
+            position: fixed;
+            padding: 0px 0px 0px;
+            flex-direction: column;
+        }
+
+        .menu ul {
+            padding: 0;
+            text-align: center;
+        }
+
+        .menu a {
+            
+            display: block;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            padding-top: 36.5px;
+            padding-bottom: 36.5px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .menu a:hover {
+            background-color: #464646;
+            color: #e0e0e0;
+        }
+
+        .menu a.ativo {
+            background-color: #464646;  /* Cor de fundo quando o link estiver ativo */
+            color: #e0e0e0;  /* Cor do texto quando o link estiver ativo */
+        }
+
+
+        .titulo {
+            font-family: "Oswald", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            margin-top: 2px;
+            background-color: rgb(30, 155, 155);
+            color: white;
+        }
+
+
+        img {
+            width: 85.8%;
+            height: 170px;
+            float: right;
+            -webkit-box-shadow: -1px -2px 25px -8px rgba(0, 0, 0, 0.52);
+        }
+
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .menu a {
+                font-size: 14px;
+                /* Fonte menor para telas médias */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .menu a {
+                font-size: 12px;
+                /* Fonte ainda menor para telas pequenas */
+            }
+        }
+
+
+        .footer {
+            background-color: rgb(99, 56, 240);
+            color: white;
+            text-align: center;
+            padding: 2px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .footer p {
+            font-family: "Oswald", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            text-align: right;
+            margin: 0;
+            font-size: 8px;
+        }
+
+        /* Flexbox para empurrar o rodapé para o fundo da página */
+        .content-wrapper {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .content {
+            padding-bottom: 15px;
+            flex-grow: 1;
+            margin-left: 14.2%;
+        }
+
+        .tabela {
+            -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.36);
+            box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.36);
+            margin-inline-start: auto;
+            margin-inline-end: auto;
+            display: table;
+            border-collapse: separate;
+            box-sizing: border-box;
+            text-indent: initial;
+            unicode-bidi: isolate;
+            border-spacing: 2px;
+            border-color: rgb(201, 201, 201);
+        }
+
+        .tabela td {
+            display: table-cell;
+            vertical-align: inherit;
+            unicode-bidi: isolate;
+            padding: 10px;
+        }
+
+        .tabela th {
+            font-family: "Oswald", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            padding: 5px;
+            background-color: #464646;
+            color: white;
+        }
+
+        .tabela tr {
+            font-family: "Oswald", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            text-align: center;
+        }
+
+        .tabela tr:nth-child(even) {
+            background-color: #dfdfdf;
+
+        }
+        .tabela tr:hover {
+            background-color: #464646;
+            color: #e0e0e0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content-wrapper">
+
+        <div class="header">
+            <img src="sobrenos.jpg">
+        </div>
+
+
+        <div class="content">
+
+            <h1 class="titulo" align="center"><strong>Horário de atendimento</strong></h1>
+            <div class="tabela">
+                <table cellspacing="0" sumary="Esta tabela é de horário de atendimento da clínica">
+                    <tr>
+                        <th>Serviços</th>
+                        <th>Sengunda a Sexta</th>
+                        <th>Sábados</th>
+                        <th>Feriados</th>
+                    </tr>
+                    <tr>
+                        <td>Clínica Geral</td>
+                        <td>07h - 19h</td>
+                        <td>08h - 16h</td>
+                        <td>07h - 19h</td>
+                    </tr>
+                    <tr>
+                        <td>Cardiologia</td>
+                        <td>09h - 19h</td>
+                        <td>08h - 16h</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Dermatologia</td>
+                        <td>09h - 19h</td>
+                        <td>08h - 16h</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Ortopedia</td>
+                        <td>09h - 19h</td>
+                        <td>08h - 16h</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Neurologia</td>
+                        <td>15h - 22h</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Psiquiatria</td>
+                        <td>07h - 19h</td>
+                        <td>08h - 16h</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Ginecologia e Obstetrícia</td>
+                        <td>09h - 19h</td>
+                        <td>08h - 16h</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Fisioterapia e Reabilitação</td>
+                        <td>07h - 19h</td>
+                        <td>08h - 16h</td>
+                        <td>08h - 14h</td>
+                    </tr>
+                </table>
+            </div>
+        <p align="center" class="link"><a href="contato.html">Entre em contato</a></p>
+
+
+        </div>
+
+        <div class="menu">
+            <ul>
+                <a href="paginaPrincipal.html" target="_self">Pagina principal</a>
+                <a href="sobreClinica.html" target="_self">Sobre a clínica</a>
+                <a href="horario.html" class="ativo">Horários</a>
+                <a href="contato.html">Contato</a>
+            </ul>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 Clínica Saúde Total. Todos os direitos reservados.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

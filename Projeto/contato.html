@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>Clinica Nédica</title>
+    <style>
+        html,
+        body {
+            
+            margin: 0;
+            padding: 0;
+            height: 67%;
+        }
+
+        .menu {
+            font-family: "Oswald", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            height: 100vh;
+            width: 14%;
+            background-color: rgb(48, 153, 153);
+            align-items: center;
+            position: fixed;
+            padding: 0px 0px 0px;
+            flex-direction: column;
+        }
+
+        .menu ul {
+            padding: 0;
+            text-align: center;
+        }
+
+        .menu a {
+            
+            display: block;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            padding-top: 36.5px;
+            padding-bottom: 36.5px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .menu a:hover {
+            background-color: #464646;
+            color: #e0e0e0;
+        }
+    
+        .menu a.ativo {
+            background-color: #464646;  /* Cor de fundo quando o link estiver ativo */
+            color: #e0e0e0;  /* Cor do texto quando o link estiver ativo */
+        }
+
+
+        .titulo {
+            margin-top: 2px;
+            background-color: rgb(30, 155, 155);
+            color: white;
+        }
+
+   
+
+        .content {
+            font-family: "Oswald", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            width: 85%;
+            margin-left: 14.2%;
+            padding-bottom: 60px;
+        }
+
+        img {
+            width: 85.8%;
+            height: 170px;
+            float: right;
+            -webkit-box-shadow: -1px -2px 25px -8px rgba(0, 0, 0, 0.52);
+        }
+
+
+        p {
+            margin-left: 10px;
+            padding: 0px;
+        }
+
+        .subtitulos {
+            border-radius: 2px;
+            margin-top: 2px;
+            margin-bottom: 2px;
+            background-color: #464646;
+            color: white;
+            padding-left: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .menu a {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .menu a {
+                font-size: 12px;
+            }
+        }
+
+        /* Rodapé fixo na parte inferior da página */
+        .footer {
+            
+            background-color: rgb(99, 56, 240);
+            color: white;
+            text-align: center;
+            padding: 2px;
+            width: 100%;
+            bottom: 0;
+            /* Fixa o rodapé na parte inferior da tela */
+            left: 121px;
+            box-sizing: border-box;
+        }
+
+        .footer p {
+            text-align: right;
+            margin: 0;
+            font-size: 8px;
+        }
+
+        .content-wrapper {
+            display: flex;
+            flex-direction: column;
+            height: 320%;
+        }
+
+        .content {
+            padding: 0%;
+            flex-grow: 1;
+        }
+        label{
+            margin-left: 5px;
+        }
+        input, textarea{
+            margin-left: 5px;
+            width: 700px;
+            margin-top: 3px;
+            padding: 5px;
+            font-size: 80%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            
+        }
+        .limpar{
+            margin-left: 5px;
+            background-color: #4d4d4d;
+            padding: 10px;
+            color: white;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            margin-top: 4px;
+        }
+        .limpar:hover{
+            background-color: red;
+        }
+        .enviar{
+            background-color: #4d4d4d;
+            padding: 10px;
+            color: white;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            margin-top: 1px;
+        }
+        .enviar:hover{
+            background-color: green;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <div class="header">
+            <img src="sobrenos.jpg">
+        </div>
+
+        <div class="content">
+            <h1 class="titulo" align="center"><strong>Contato da clínica</strong></h1>
+
+            <h3 class="subtitulos">Informações de contato:</h3>
+            <p><strong>Telefone:</strong> (11) 98745-9421</p>
+            <p><strong>WhatsApp:</strong> (11) 99743-6709</p>
+            <p><strong>Endereço:</strong> Rua Exemplos Testes, Bairro EuInventei, São Paulo-SP, CEP 01234-567</p>
+            
+            <h3 class="subtitulos">Localização</h3>
+            <div align="center" class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d467690.1438961028!2d-46.92495935413982!3d-23.682063548955284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2zU8OjbyBQYXVsbywgU1A!5e0!3m2!1spt-BR!2sbr!4v1734285446056!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <h3 class="subtitulos">Fale conosco:</h3>
+            <form action="#" method="post">
+                <label for="Nome">Nome:</label> <br>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required> <br>
+                <label for="E-mail">E-mail:</label> <br>
+                <input type="email" id="E-mail" name="E-mail" placeholder="Digite seu e-mail" required> <br>
+                <label for="Assunto">Assunto:</label> <br>
+                <input type="text" id="Assunto" name="Assunto" placeholder="Digite o assunto" required> <br>
+                <label for="Mensagem">Mensagem</label> <br>
+                <textarea name="mensagem" id=""></textarea><br>
+                <label>Numero para contato(WhatsApp)</label><br>
+                <input type="number" placeholder="ddd + número">
+                <button class="limpar" type="reset">Limpar</button>
+                <button class="enviar" type="submit" onclick="alert('enviado com sucesso')">Enviar</button>
+            </form>
+        </div>
+        <div class="menu">
+            <ul>
+                <a href="paginaPrincipal.html" target="_self">Pagina principal</a>
+                <a href="sobreClinica.html" target="_self">Sobre a clínica</a>
+                <a href="horario.html">Horários</a>
+                <a href="contato.html" class="ativo">Contato</a>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p align="center">&copy; 2024 Clínica Saúde Total. Todos os direitos reservados.</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>Clinica Nédica</title>
+    <style>
+        html,
+        body {
+            
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .menu {
+            font-family: "Oswald", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            height: 100vh;
+            width: 14%;
+            background-color: rgb(48, 153, 153);
+            align-items: center;
+            position: fixed;
+            padding: 0px 0px 0px;
+            flex-direction: column;
+        }
+
+        .menu ul {
+            padding: 0;
+            text-align: center;
+        }
+
+        .menu a {
+            
+            display: block;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            padding-top: 36.5px;
+            padding-bottom: 36.5px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .menu a:hover {
+            background-color: #464646;
+            color: #e0e0e0;
+        }
+    
+        .menu a.ativo {
+            background-color: #464646;  /* Cor de fundo quando o link estiver ativo */
+            color: #e0e0e0;  /* Cor do texto quando o link estiver ativo */
+        }
+
+        .titulo {
+            margin-top: 2px;
+            background-color: rgb(30, 155, 155);
+            color: white;
+        }
+
+        .content ul {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            background-color: rgb(219, 219, 219);
+            border-radius: 2px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .content {
+
+            font-family: "Oswald", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            width: 90%;
+            margin-left: 14.2%;
+            padding-bottom: 60px;
+        }
+
+        img {
+            width: 85.78%;
+            height: 170px;
+            float: right;
+            -webkit-box-shadow: -1px -2px 25px -8px rgba(0, 0, 0, 0.52);
+        }
+
+        li {
+            font-size: 12px;
+        }
+
+        p {
+            padding: 0px;
+        }
+
+        .subtitulos {
+            border-radius: 2px;
+            margin-top: 2px;
+            margin-bottom: 2px;
+            background-color: #464646;
+            color: white;
+            padding-left: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .menu a {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .menu a {
+                font-size: 12px;
+            }
+        }
+
+        /* Rodapé fixo na parte inferior da página */
+        .footer {
+            
+            background-color: rgb(99, 56, 240);
+            color: white;
+            text-align: center;
+            padding: 2px;
+            width: 100%;
+            bottom: 0;
+            /* Fixa o rodapé na parte inferior da tela */
+            left: 121px;
+            box-sizing: border-box;
+        }
+
+        .footer p {
+            text-align: right;
+            margin: 0;
+            font-size: 8px;
+        }
+
+        .content-wrapper {
+            display: flex;
+            flex-direction: column;
+            height: 190%;
+        }
+
+        .content {
+            padding: 0%;
+            flex-grow: 1;
+        }
+        .link{
+            margin-left: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <div class="header">
+            <img src="img.jpg">
+        </div>
+
+        <div class="content">
+            <h1 class="titulo" align="center"><strong>Bem-Vindo à Clínica Saúde Total</strong></h1>
+            <p align="center"><i>"Na Clínica Médica Saúde Total, oferecemos atendimento médico de excelência com
+                    profissionais qualificados, infraestrutura moderna e uma abordagem humanizada. Nossa prioridade é
+                    cuidar de você e da sua família, garantindo saúde e qualidade de vida."</i></p>
+
+            <h3 class="subtitulos">Destaques:</h3>
+            <ul>
+                <li><strong>Atendimento Personalizado:</strong> Cuidado individualizado com profissionais especializados
+                </li>
+                <li><strong>Tecnologia Avançada:</strong>Equipamentos modernos para diagnósticos precisos.</li>
+                <li><strong>Localização Estratégica:</strong>De fácil acesso e com estacionamento.</li>
+            </ul>
+            <h3 class="subtitulos">Serviços Principais</h3>
+            <ul>
+                <li>Consultas em diversas especialidades.</li>
+                <li>Exames laboratoriais..</li>
+                <li>Atendimento pediátrico.</li>
+                <li>Vacinação.</li>
+            </ul>
+            <h3 class="subtitulos">Depoimentos de Pacientes:</h3>
+            <p><blockquote><i> "A Clínica Saúde Total me surpreendeu pela qualidade do atendimento. Fui muito bem tratado desde o primeiro contato." – João S.
+                "Equipe atenciosa e estrutura impecável. Recomendo a todos!" – Maria A.</i></blockquote></p>
+            <h3 class="subtitulos">Nos conheça mais um pouco:</h3>
+            <p class="link"><a href="sobreClinica.html">Sobre nós</a></p>
+
+        </div>
+
+        <div class="menu">
+            <ul>
+                <a href="paginaPrincipal.html" class="ativo" target="_self">Pagina principal</a>
+                <a href="sobreClinica.html" target="_self">Sobre a clínica</a>
+                <a href="horario.html">Horários</a>
+                <a href="contato.html">Contato</a>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p align="center">&copy; 2024 Clínica Saúde Total. Todos os direitos reservados.</p>
+    </div>
+</body>
+
+</html>

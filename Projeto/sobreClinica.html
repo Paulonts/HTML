@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+    <title>Clinica Nédica</title>
+    <style>
+        body {
+            min-height: 100vh;
+            /* Garante que o corpo da página ocupe ao menos a altura da tela */
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            margin: 0;
+        }
+
+        .menu {
+            font-family: "Oswald", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            height: 100vh;
+            width: 14%;
+            background-color: rgb(48, 153, 153);
+            align-items: center;
+            position: fixed;
+            padding: 0px 0px 0px;
+            flex-direction: column;
+        }
+
+        .menu ul {
+
+            padding: 0;
+            text-align: center;
+        }
+
+        .menu a {
+
+            display: block;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            padding-top: 36.5px;
+            padding-bottom: 36.5px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .menu a:hover {
+            background-color: #464646;
+            color: #e0e0e0;
+        }
+        .menu a.ativo {
+            background-color: #464646;  /* Cor de fundo quando o link estiver ativo */
+            color: #e0e0e0;  /* Cor do texto quando o link estiver ativo */
+        }
+
+
+        .titulo {
+            margin-top: 2px;
+            background-color: rgb(30, 155, 155);
+            color: white;
+        }
+
+        .content ul {
+            margin-left: 5px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            background-color: rgb(219, 219, 219);
+            border-radius: 2px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        img {
+            width: 90%;
+            height: 170px;
+            float: right;
+            -webkit-box-shadow: -1px -2px 25px -8px rgba(0, 0, 0, 0.52);
+        }
+
+        li {
+            font-size: 12px;
+        }
+
+        p {
+            font-size: 14px;
+            margin-left: 5px;
+            padding: 0px;
+        }
+
+        .subtitulos {
+            border-radius: 2px;
+            margin-top: 2px;
+            margin-bottom: 2px;
+            background-color: #464646;
+            color: white;
+            padding-left: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .menu a {
+                font-size: 14px;
+                /* Fonte menor para telas médias */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .menu a {
+                font-size: 12px;
+                /* Fonte ainda menor para telas pequenas */
+            }
+        }
+
+
+        .footer {
+            font-family: "Oswald", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            background-color: rgb(99, 56, 240);
+            color: white;
+            text-align: center;
+            padding: 2px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .footer p {
+            text-align: right;
+            margin: 0;
+            font-size: 8px;
+        
+        }
+
+        /* Flexbox para empurrar o rodapé para o fundo da página */
+        .content-wrapper {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .content {
+            font-family: "Oswald", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            flex-grow: 1;
+            margin-left: 14.2%;
+        }
+
+        .infraestrutura {
+            justify-content: space-between;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            margin-top: 8px;
+        }
+
+        .infraestrutura img {
+            margin-left: 5px;
+            width: max-content;
+            box-shadow: -1px -2px 25px -8px rgba(0, 0, 0, 0.52);
+            border-radius: 5px;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="content-wrapper">
+
+        <div class="header">
+            <img src="sobrenos.jpg">
+        </div>
+
+
+        <div class="content">
+
+            <h1 class="titulo" align="center"><strong>Sobre nós</strong></h1>
+            <p>Na clínica <strong>Saúde Total</strong>, nossa missão é proporcionar cuidados médicos de alta
+                qualidade, com foco no atendimento personalizado, humanizado e acolhedor. Desde a nossa fundação em
+                1968, trabalhamos incansavelmente para oferecer a melhor assistência à saúde, priorizando sempre o
+                bem-estar e a confiança dos nossos pacientes.</p>
+
+            <h3 class="subtitulos">Nossas equipes:</h3>
+            <p>Contamos com uma equipe altamente qualificada e experiente de médicos, enfermeiros e profissionais de
+                saúde especializados, que atuam de forma integrada para garantir tratamentos eficazes e cuidados
+                completos. Cada membro da nossa equipe é cuidadosamente selecionado para garantir um atendimento
+                ético, profissional e empático.
+
+                Nossa equipe multidisciplinar abrange diversas especialidades, como:</p>
+            <ul>
+                <li><strong>Clínica Geral</strong></li>
+                <li><strong>Cardiologia</strong> </li>
+                <li><strong>Dermatologia</strong></li>
+                <li><strong>Ginecologia e Obstetrícia</strong></li>
+                <li><strong>Ortopedia</strong></li>
+                <li><strong>Neurologia</strong></li>
+                <li><strong>Psiquiatria</strong></li>
+                <li><strong>Fisioterapia e Reabilitação</strong></li>
+            </ul>
+            <p>Além disso, oferecemos serviços de exames laboratoriais e de imagem, garantindo que nossos pacientes
+                tenham acesso a diagnósticos rápidos e precisos.</p>
+
+
+            <h3 class="subtitulos">Nossa Infraestrutura</h3>
+            <div class="infraestrutura">
+                <img src="INFRAESTRUTURA.jpg" alt="">
+                <p>
+                    A Clínica <strong>Saúde Total</strong> está equipada com tecnologia de ponta, garantindo que todos os
+                    procedimentos e tratamentos sejam realizados com segurança e precisão. Desde a recepção até as salas
+                    de atendimento, nosso ambiente é projetado para oferecer conforto e tranquilidade. Nossos pacientes
+                    podem contar com um ambiente limpo, moderno e acolhedor, o que torna a experiência de atendimento
+                    mais agradável e tranquila.
+                </p>
+            </div>
+            
+
+            <h3 class="subtitulos">Valores e Compromisso com a Saúde</h3>
+            <div class="infraestrutura">
+                <img src="enfermeira.jpg" alt="">
+                <p>
+                    Valorizamos a confiança que nossos pacientes depositam em nós e, por isso, nos comprometemos com a
+                    excelência em todos os aspectos do nosso atendimento. <br> Trabalhamos com transparência, ética e
+                    respeito, buscando sempre a melhor abordagem para cada caso. Sabemos que a saúde é um bem precioso,
+                    por isso, nos dedicamos a fornecer cuidados preventivos, orientações contínuas e acompanhamento
+                    personalizado, para que nossos pacientes possam alcançar e manter uma boa saúde ao longo da vida.
+                    <br>
+                    Nosso objetivo não é apenas tratar doenças, mas também promover a saúde e prevenir possíveis
+                    complicações. Acreditamos que a chave para uma vida saudável está em uma combinação de cuidados
+                    médicos de qualidade, hábitos saudáveis e acompanhamento regular.
+                </p>
+            </div>
+            
+
+            <h3 class="subtitulos">Compromisso com a Inovação e a Educação Médica</h3>
+            <div class="infraestrutura">
+                <img src="ia.jpg" alt="">
+                <p>Nós também investe em inovação e atualização contínua, promovendo treinamentos regulares para nossa
+                    equipe e utilizando o que há de mais moderno em termos de tecnologias e práticas médicas. Isso nos
+                    permite oferecer tratamentos avançados e garantir que nossos pacientes recebam o melhor em termos de
+                    cuidados médicos.</p>
+            </div>
+            
+            <h3 class="subtitulos">Venha Conhecer a Clínica <strong>'Saúde Total'.</strong></h3>
+            <div class="infraestrutura">
+                <img src="venha.jpg" alt="">
+                <p>Nosso compromisso é garantir que você e sua família recebam um atendimento de qualidade, com a
+                    dedicação e carinho que merecem. Estamos prontos para atender às suas necessidades de saúde e
+                    ajudá-lo a alcançar o melhor estado de bem-estar possível. Agende uma consulta conosco e descubra
+                    como podemos cuidar da sua saúde com atenção, profissionalismo e respeito.</p>
+            </div>
+            <p class="link"><a href="horario.html">Horários disponíveis</a></p>
+
+          
+
+        </div>
+
+        <div class="menu">
+            <ul>
+                <a href="paginaPrincipal.html" target="_self">Pagina principal</a>
+                <a href="sobreClinica.html" class="ativo" target="_self">Sobre a clínica</a>
+                <a href="horario.html">Horários</a>
+                <a href="contato.html">Contato</a>
+            </ul>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 Clínica Saúde Total. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</body>
+
+</html>
