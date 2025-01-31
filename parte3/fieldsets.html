@@ -40,11 +40,11 @@
 
     <h1>Formulário de cadastro</h1>
     <form name="cadastro" method="post" autocomplete="on" target="_self">
-        <fieldset>
+        <fieldset disabled>
             <legend>Dados pessoais</legend>
             <div class="row">
-                <label>Nome:</label><input type="text">
-                <label class="email">Email:</label><input type="text"><br>
+                <label>Nome:</label><input type="text" autofocus required>
+                <label class="email">Email:</label><input placeholder="Ex:meuemail@gmail.com" required type="text"><br>
             </div>
             <div class="row">
                 <label>Profissão:</label> <select name="role">
@@ -79,6 +79,12 @@
             <div class="row">
                 <label>Linkedin</label> <input type="text">
                 <label>Github</label> <input type="text"> <br>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Observação</legend>
+            <div class="row">
+                <textarea minlength="10" maxlength="250" name="Observação" id="Observação" cols="66" rows="10"></textarea>
             </div>
         </fieldset>
         <div class="row">

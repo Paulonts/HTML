@@ -1,0 +1,244 @@
+/* Reset básico */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Configurações básicas de texto e listas */
+ul { 
+    list-style: none; 
+    padding-left: 5px; 
+}
+
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+/* Barra superior e Header */
+.bar {
+    background-color: #f9f9fb;
+    padding: 15px;
+    border-top: solid 1px #cdcdcd;
+    border-bottom: solid 1px #cdcdcd;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+    padding: 15px;
+    position: relative;
+}
+
+.agrupar {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+#acesso, #login {
+    border: none;
+    color: black;
+    background-color: white;
+    font-size: 27px;
+    font-family: fantasy;
+}
+
+#login:hover {
+    color: green;
+}
+
+#titulo, #subtitulo {
+    margin: 0;
+}
+
+#subtitulo {
+    font-size: 14px;
+    color: #666;
+}
+
+.search-box {
+    position: static; /* Remove o posicionamento absoluto */
+    top: 4.0%;
+    left: 50%;
+    border-radius: 40px;
+    background: rgb(100, 100, 100);
+    height: 40px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 40px;
+    transition: .5s;
+    width: 0;
+    font-family: 'Open Sans';
+    font-size: 20px;
+}
+
+.search-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(99, 99, 99);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.search-box:hover > .search-txt {
+    width: 250px;
+    padding: 0px 6px;
+}
+
+.search-box:hover > .search-btn {
+    background: rgb(79, 79, 79);
+}
+
+/* Responsividade do Layout */
+.content {
+    margin: auto;
+    display: grid;
+    grid-template-areas: 
+        "sidebar main anchors";
+    grid-template-columns: minmax(0, 10rem) minmax(0, 2.5fr) minmax(0, 14rem);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/* Estilo principal */
+.main {
+    border: 1px solid rgb(184, 184, 184);
+    padding: 10px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#tituloPrincipal, #historia, #Identidades,#video {
+    text-align: center;
+    font-family: 'Cartoon Block Old', sans-serif;
+}
+.container-video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.video-container iframe {
+    max-width: 100%; /* Garante que o vídeo não ultrapasse a largura do contêiner */
+    height: auto; /* Mantém a proporção do vídeo */
+    aspect-ratio: 16 / 9; /* Mantém a proporção 16:9 do vídeo */
+}
+blockquote {
+    margin-left: 1%;
+}
+
+.footer {
+    min-height: 50px;
+    border-top: solid 1px #cdcdcd;
+    padding-top: 10px;
+    background-color: black;
+    color: white;
+}
+
+#fixo {
+    position: static;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 30px;
+    margin-top: 25px;
+}
+
+#movel {
+    margin-left: 10px;
+    position: fixed;
+    padding-left: 0px;
+    display: block;
+}
+
+#anchors, #ul, #movel, #li, #a {
+    color: blue;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+li {
+    padding-top: 14px;
+}
+
+.sidebar {
+    border-right: solid 1px #cdcdcd;
+}
+
+#busca {
+    margin-left: 35px;
+    font-family: fantasy;
+    font-size: 30px;
+    margin-top: 25px;
+}
+
+/* Responsividade com Media Queries */
+@media (max-width: 1024px) {
+    .header {
+        gap: 2rem;
+    }
+
+    .content {
+        grid-template-areas: 
+            "main"
+            "anchors"
+            "sidebar";
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        border-right: none;
+        border-bottom: solid 1px #cdcdcd;
+    }
+
+    .search-box {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .search-box {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .sidebar {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-txt {
+        font-size: 14px;
+    }
+
+    #titulo, #subtitulo {
+        font-size: 16px;
+    }
+}
